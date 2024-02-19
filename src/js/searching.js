@@ -22,6 +22,6 @@ document.getElementById('icon').addEventListener('click', function () {
   searchBtn.addEventListener("click", (e) => {
     e.preventDefault();
     const searchInput = document.getElementById("searchInput").value;     
-    window.location.href = `./src/movie/index.html?search=${searchInput}`;
+    window.location.href = `/src/movie/index.html?search=${searchInput}`;
  
  });
