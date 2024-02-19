@@ -3,24 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movies Database | Home</title>
+    <title>Movies Database | Movie</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <link rel="stylesheet" href="./src/css/index.css" />
-    <script src="./src/js/main.js" type="module"></script>
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/searching.js" type="module"></script>
   </head>
   <body>
     <header>
       <div class="wrapper">
         <div class="box">
-            <div id='searchBox'>                
-            <input placeholder='Search for movies...' type='text' id='searchInput'>
+            <div id='searchBox'>             
+            <input placeholder='Search here...' type='text' id='searchInput'>
              <input id='submitBtn' type='submit' value='Search'/>
             </div>
             <span id='icon'><img src="square.png" alt=""></span>
             <nav id='navArea'>
              <ul class='navArea'>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Movies</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./src/movie/movies.html">Movies</a></li>
                 <li><a href="#">Series</a></li>                
                 <li><a href="#">Actors</a></li>
              </ul>
@@ -30,15 +30,9 @@
     <div style='clear: both;'/>         
     </header>
     <main>
-      
-    <section class="mission">
-      <h1>Movies Database</h1>
-      <p>Welcome to the most complete site for movies, series and actors.</p>
-      <p>We have a database with thousands of itens you can search for.</p>
-      <p>We are always updating our catalog and providing information of the latest releases.</p>
-    </section>
+          
     <section>
-      <h2>Latest Movie Release</h2>
+      <h1>Movie</h1>
       <div class="top-list"></div>
     </section>
       

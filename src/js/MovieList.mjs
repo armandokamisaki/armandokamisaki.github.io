@@ -28,9 +28,15 @@ export default class MovieList {
     renderList(movieList) {
         renderListWithTemplate(productCardTemplate, this.listElement, movieList);
     }
+
+    async getList(searchInput, dataFunction, movieElement) {
+      this.listElement = movieElement;
+      const list = this.dataSource.dataFunction(searchInput);
+      this.renderList(list);    
+    }
 }
 
-function productCardTemplate(product) {
+export function productCardTemplate(product) {
   let image;
   if(product?.primaryImage?.url !== null && product?.primaryImage?.url !== undefined) {
   //if(product?.primaryImage.hasOwnProperty("url")) {

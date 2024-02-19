@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "build": "^0.1.4",
     "dotenv": "^16.4.2",
     "vue": "^3.4.15"
   },

@@ -14,6 +14,15 @@ export function renderListWithTemplate(
       const htmlItems = list.results?.map((item) => templateFunction(item));
       console.log(htmlItems);
       // Insert filled templates into the HTML.
-      parentElement.insertAdjacentHTML(position, htmlItems && htmlItems.join(""));
+      parentElement?.insertAdjacentHTML(position, htmlItems && htmlItems.join(""));
+    }
+    
+    // get search word from URL
+    export function getParam(params) {
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const search = urlParams.get(params);
+
+      return search;
     }
   
