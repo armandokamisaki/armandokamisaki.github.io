@@ -45,14 +45,18 @@ export function productCardTemplate(product) {
     image = "../src/images/noImage.png";
   } 
     return `<li class="movie-card">
+    <div class="movieImage">
     <a href="/product_pages/?product=${product.id}">
       <img
         src="${image}"
         alt="${product.titleText.text}"
       />
+      </div>
+      <div class="movieInfo">
       <h2 class="card__name">${product.titleText.text}</h2>
       
       <p class="product-card__price">${product.releaseYear.year}</p>
-    </a>    
+    </a> 
+    </div>   
   </li>`;
 }

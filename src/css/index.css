@@ -1,5 +1,5 @@
 /* Googlefont Poppins CDN Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Quintessential&display=swap" rel="stylesheet');
 
 *, ::before, ::after {
 	box-sizing: inherit;
@@ -105,12 +105,45 @@ ul.navArea>li>a:hover, ul.sub-menu>li>a:hover {
 .movie-card {
   flex: 1 1 45%;
   margin: 0.25em;
-  padding: 0.5em;
   border: 1px solid var(--light-grey);
-  max-width: 250px;
+  max-width: 250px;  
+  background-color: black;
+  padding: 3px;
 }
 .movie-card img {
 	width: 100%;
+}
+
+main {
+	background-image: url("/src/images/cinema.jpg");
+}
+main img {
+	width: 100%;
+}
+a, h1, h2 {
+	font-family: "Quintessential", serif;;
+}
+p {
+	font-family: "Gamja Flower", sans-serif;
+}
+
+.movieImage {
+  border: 25px solid transparent;
+  padding: 2px;
+  border-image: url("/src/images/movieborder2.jpg") 60 stretch;
+}
+
+.movieInfo {
+	padding-top: 5px;
+	color: white;
+}
+.movieInfo a, .movieInfo h2 {
+	text-align: center;
+	color: white;
+	margin-bottom: -10px;
+}
+.movieInfo a {
+	font-size: 1.1em;
 }
 @media only screen and (max-width:720px) {
 	nav ul {

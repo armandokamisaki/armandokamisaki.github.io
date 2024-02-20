@@ -1,6 +1,6 @@
-const baseURL = import.meta.env.BASE_URL;
-const key = import.meta.env.KEY;
-const host = import.meta.env.HOST;
+//const baseURL = import.meta.env.BASE_URL;
+//const key = import.meta.env.KEY;
+//const host = import.meta.env.HOST;
 async function convertToJson(res) {
   const data = await res.json();
   if (res.ok) {
