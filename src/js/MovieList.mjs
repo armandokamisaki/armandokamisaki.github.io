@@ -53,9 +53,9 @@ export function productCardTemplate(product) {
       />
       </div>
       <div class="movieInfo">
-      <h2 class="card__name">${product.titleText.text}</h2>
-      
-      <p class="product-card__price">Release year: ${product.releaseYear.year}</p>
+      <h2>${product.titleText.text}</h2>
+      <p>${product.primaryImage?.caption?.plainText}</p>
+      <p>Release year: ${product.releaseYear.year}</p>
     </a> 
     </div>   
   </li>`;
