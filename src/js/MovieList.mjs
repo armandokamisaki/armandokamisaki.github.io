@@ -55,7 +55,7 @@ export function productCardTemplate(product) {
       <div class="movieInfo">
       <h2 class="card__name">${product.titleText.text}</h2>
       
-      <p class="product-card__price">${product.releaseYear.year}</p>
+      <p class="product-card__price">Release year: ${product.releaseYear.year}</p>
     </a> 
     </div>   
   </li>`;

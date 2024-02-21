@@ -103,8 +103,8 @@ ul.navArea>li>a:hover, ul.sub-menu>li>a:hover {
   padding: 0;	
 }
 .movie-card {
-  flex: 1 1 45%;
-  margin: 0.25em;
+  flex: 1 1 50%;
+  margin: 0.5em;
   border: 1px solid var(--light-grey);
   max-width: 250px;  
   background-color: black;
@@ -125,6 +125,15 @@ a, h1, h2 {
 }
 p {
 	font-family: "Gamja Flower", sans-serif;
+}
+.main-list {
+	text-align: center;
+	font-size: 2.5em;
+	color:#f27a11;
+	background-color: #fff;
+	border: 2px solid black;
+	width: 30%;
+	margin: 10px auto 10px auto;
 }
 
 .movieImage {
